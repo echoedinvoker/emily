@@ -97,4 +97,10 @@
 - If the object to be DA is a web page, then use CROP positioning before each operation.
   - Because **web pages are very dynamic**, compared to desktop applications.
     - Even if there is only simple HTML, the length of the content in the tag will change the UI that is presented.
+  - There are some features of the web page that directly break the correctness of relative coordinates.
+    - modal.
+    - dynamic tag area.
+    - scroll.
+  - The conclusion is that when you can't get 100% control of the dynamics of the web page, use the closest image that doesn't change as the CROP for each operation.
+    - Simply speaking, we use the speed of execution in exchange for availability.
 - Because the coordinates in ALL CROPS are unreliable, use the move api to let the cursor reach the CROP position and then pull out the rect range to get the relative distance.
