@@ -1,12 +1,22 @@
 # **_Get Coordinates_**
 
 ![alt click SNAPSHOT](pic/bandicam%202022-09-18%2021-39-14-860.jpg)
+
+- The screen in the remote machine's browser is not real time, so it is best to click SNAPSHOT once before each positioning.
+
 ![alt click LIVE](pic/bandicam%202022-09-18%2021-40-01-184.jpg)
+
+- LIVE allows us to operate the target machine remotely (but only click).
 
 ## **Get x, y coordinate**
 
 ![alt click a location](pic/bandicam%202022-09-18%2022-21-01-855.jpg)
+
+- Click any point on the **remote machine's** browser screen.
+
 ![alt get coord](pic/bandicam%202022-09-18%2022-21-32-241.jpg)
+
+- Then, we can get the absolute coordinates of this point in the **target machine**.
 
 ## **Get x, y and width, height of rect area**
 
@@ -20,13 +30,13 @@
 ![alt get relative coords to current CROP](pic/bandicam%202022-09-18%2022-29-22-439.jpg)
 ![alt wrong place of crop from ALL CROPS](pic/bandicam%202022-09-18%2022-31-36-630.jpg)
 
-- The coordinates recorded in "ALL CROPS" are always the same as when the CROP was created.
+- The coordinates recorded in "ALL CROPS" are **always the same as when the CROP was created**.
   - This feature can easily cause bugs, especially when the coordinates of a single CROP have to correspond to the multiple relative positions for operation.
 
 # **_Crop_**
 
-- CROP is an image that is used to compare with the image in the target machine screen to obtain the coordinates.
-- We use the image in the application that needs to be manipulated as the CROP to avoid application location changes.
+- CROP is an image that is used to **compare** with the image in the target machine screen to obtain the coordinates.
+- We use the image **in** the application that needs to be manipulated as the CROP to avoid application location changes.
 
 ## **Which is good crop?**
 
@@ -42,7 +52,7 @@
 ![alt create a CROP 2](pic/bandicam%202022-09-18%2021-42-29-769.jpg)
 
 - When the graph is clean around the main image, you can omit the mask to speed up development.
-- The scope of CROP contains the part of the mask.
+- The scope of CROP **contains the part of the mask**.
   - This concept is important for taking the relative position.
 
 ## **Get file name of CROP**
@@ -67,9 +77,9 @@
 
 ![alt change to waitFor api](pic/bandicam%202022-09-18%2022-06-41-727.jpg)
 
-- Note that if you change to the waitFor api, the second parameter is the wait time and the third parameter is the restrictions.
+- Note that if you change to the waitFor api, **the second parameter is the wait time and the restrictions move to third**.
 - If no image is found with a confidence value greater than the restriction value, null will be returned.
-  - When using the waitFor API, it is recommended that the restriction of confidence must be set.
+  - **When using the waitFor API, it is recommended that the restriction of confidence must be set**.
 
 ## **Move to CROP**
 
@@ -80,10 +90,11 @@
 ![alt move api add full width and height](pic/bandicam%202022-09-18%2022-19-15-807.jpg)
 ![alt cursor move to right-botton corner of CROP](pic/bandicam%202022-09-18%2022-19-35-600.jpg)
 
-- The above result mainly shows that the scope of CROP contains the mask part.
+- The above result mainly shows that **the scope of CROP contains the mask part**.
 
 # **_Other Tips for Positioning_**
 
 - If the object to be DA is a web page, then use CROP positioning before each operation.
-  - Because web pages are very dynamic, compared to desktop applications.
+  - Because **web pages are very dynamic**, compared to desktop applications.
     - Even if there is only simple HTML, the length of the content in the tag will change the UI that is presented.
+- Because the coordinates in ALL CROPS are unreliable, use the move api to let the cursor reach the CROP position and then pull out the rect range to get the relative distance.
