@@ -2,7 +2,7 @@
 
 ![alt introduing clickCrop, moveToCrop](pic/bandicam%202022-09-19%2002-41-38-367.jpg)
 
-- **If the relative position coordinates are inside the CROP, we get strange results**.
+- **If the relative position coordinates are inside the CROP, we will get strange results**.
   - If there is such a need, use the original approach.
 - When taking relative positions, remember that **the coordinates in ALL CROPS are always the coordinates used to create the CROP**.
 - This can save a lot of development time when used in cases where availability is critical, but be careful with the first two points.

@@ -47,7 +47,7 @@
 
 # **_Demo By Matt_**
 
-- **Duration** ~6m
+- **Duration** ~15m
 
 - Need to explain in advance is the demo development "process".
 - Too many "that" beginning.
@@ -57,7 +57,7 @@
 
 # **_Last Q&A by Duke_**
 
-- **Duration** ~20m
+- **Duration** ~6m
 
 ### **Novatech**
 
