@@ -23,6 +23,10 @@
 ![alt frame a rect area](pic/bandicam%202022-09-18%2022-22-23-814.jpg)
 ![alt get coord and rect info](pic/bandicam%202022-09-18%2022-23-01-075.jpg)
 
+- **All four values are absolute coordinates**.
+  - So if you want to get the relative position by this method, you have to do some calculations to get.
+  - Because the properties of CROP are **left, top, width, height**, it is easy to misunderstand here.
+
 ## **Get relative coordinates to current CROP**
 
 ![alt get CROP's green shade from ALL CROPS](pic/bandicam%202022-09-18%2022-27-33-095.jpg)
