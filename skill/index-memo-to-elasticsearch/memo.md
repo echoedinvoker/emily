@@ -39,3 +39,6 @@
 ![Alt da kibana step](pic/bandicam%202022-09-21%2023-43-33-628.jpg)
 ![Alt da kibana 1](pic/bandicam%202022-09-21%2023-45-57-480.jpg)
 ![Alt da kibana 2](pic/bandicam%202022-09-21%2023-47-02-236.jpg)
+
+- Although Kibana is a web page, I don't use **web automation** here but **DA**.
+  - This is because each line of the internal editor in kibana's **Dev Tool console** is **dynamically generated**, and it may not be much easier to parse how to catch the right element than DA.
