@@ -10,7 +10,7 @@
 > Because Emily is installed on Windows, the path to the folder must be viewed from a Windows perspective.
 > ![Alt reveal in exploere](pic/bandicam%202022-09-21%2017-03-52-200.jpg) > ![Alt window folder](pic/bandicam%202022-09-21%2017-04-20-674.jpg)
 
-- So you must actually open the Windows Explorer and get the path instead of getting it directly from VS Code.
+- So you must actually open the **Windows Explorer** and get the path instead of getting it directly from VS Code.
 
 ## **Check PICS folder and Convert to Paths CSV**
 
@@ -27,10 +27,12 @@
 
 - Because the image is fixed at the bottom, if you want to make it better, you should add the boundary parameter to limit the scope of CROP search.
 - **memo.md** There are several similar images in the VS Code interface, so it is easy to catch the wrong.
-  - I found that even with the same confidence parameter value, the find API tends to immediately grab an image even if it's wrong, whereas with the waitFor API it waits.
+  - I found that even with **the same confidence parameter value**, the find API tends to immediately grab an image even if it's wrong, whereas with the waitFor API it waits.
     - This is not what I expected.
 
 ![Alt desktop wap 2](pic/bandicam%202022-09-21%2017-12-31-377.jpg)
 
 - Using **api.pasteText** under vim is very smooth, too.
 - In fact, vim was found to be very suitable for automating the use of DA's **api.keyboard.type**.
+- Currently, you need to run the skill with **memo.md already opened and minimized in VS Code** to run properly.
+  - There is still a lot of room for improvement to make this skill more robust.
