@@ -3,6 +3,8 @@
 ![Alt userfill step](pic/bandicam%202022-09-21%2017-02-45-677.jpg)
 ![Alt userfill wap](pic/bandicam%202022-09-21%2017-03-09-341.jpg)
 
+- Because the path to the image folder is different every time you need it, you can use **user fill** to enter the folder path.
+
 ### _How to get Correct WSL Path?_
 
 > Because Emily is installed on Windows, the path to the folder must be viewed from a Windows perspective.
