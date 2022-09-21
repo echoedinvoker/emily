@@ -19,6 +19,9 @@
 
 - If you push the processed data directly into the array **data**, the order will be messed up.
   - So there must be a **timestamp** property for sorting.
+- Regular expression use **|** to represent **OR**.
+  - How about **AND**? This issue is discussed in the following links.
+    - https://stackoverflow.com/questions/469913/regular-expressions-is-there-an-and-operator.
 
 ## **DA**
 
