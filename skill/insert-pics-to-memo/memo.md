@@ -29,3 +29,5 @@
     - This is not what I expected.
 
 ![Alt desktop wap 2](pic/bandicam%202022-09-21%2017-12-31-377.jpg)
+
+- Using **api.pasteText** under vim is very smooth, too.
