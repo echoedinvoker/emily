@@ -31,3 +31,4 @@
 ![Alt desktop wap 2](pic/bandicam%202022-09-21%2017-12-31-377.jpg)
 
 - Using **api.pasteText** under vim is very smooth, too.
+- In fact, vim was found to be very suitable for automating the use of DA's **api.keyboard.type**.
