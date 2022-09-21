@@ -3,6 +3,10 @@
 ![Alt user fill step](pic/bandicam%202022-09-21%2023-33-01-763.jpg)
 ![Alt user fill wap](pic/bandicam%202022-09-21%2023-34-10-490.jpg)
 
+- Some points that can be further improved:
+  - "category" and "tag" should have trim processing, because users may be used to adding spaces after the comma when typing.
+  - Determine whether it is no value, if this function is added, the skills will be more generic.
+
 # **_Udemy site_**
 
 ## **Do not clean partition**
