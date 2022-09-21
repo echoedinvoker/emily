@@ -24,4 +24,8 @@
 ![Alt desktop wap 1](pic/bandicam%202022-09-21%2017-11-14-882.jpg)
 
 - Because the image is fixed at the bottom, if you want to make it better, you should add the boundary parameter to limit the scope of CROP search.
-  ![Alt desktop wap 2](pic/bandicam%202022-09-21%2017-12-31-377.jpg)
+- **memo.md** There are several similar images in the VS Code interface, so it is easy to catch the wrong.
+  - I found that even with the same confidence parameter value, the find API tends to immediately grab an image even if it's wrong, whereas with the waitFor API it waits.
+    - This is not what I expected.
+
+![Alt desktop wap 2](pic/bandicam%202022-09-21%2017-12-31-377.jpg)
