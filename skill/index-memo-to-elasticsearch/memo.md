@@ -14,6 +14,10 @@
 ![Alt go to udemy learning site](pic/bandicam%202022-09-21%2023-35-07-549.jpg)
 ![Alt partition problem](pic/bandicam%202022-09-21%2023-35-31-515.jpg)
 
+- Kibana will directly detect whether we have used cookies or not, and if not, it will run a bot test before or after login.
+  - The easiest way to handle this is to **uncheck the clear browser information** section in the skill settings.
+  - The **partition** set here should be different from other skills, so that it will not be changed by the settings of other skills.
+
 ## **Get metadata from Udemy learning page**
 
 ![Alt script step](pic/bandicam%202022-09-21%2023-36-02-657.jpg)
