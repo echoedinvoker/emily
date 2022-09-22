@@ -10,6 +10,7 @@
 ![Alt userfill project path(wsl) ](pic/bandicam%202022-09-22%2023-59-52-645.jpg)
 
 - Because I want to automatically open the image in VS Code by entering the WSL image path, I need the WSL project folder path to rewrite the image path.
+  - This path can be copied directly in VS Code, instead of opening the File Explorer copy.
 
 # **_Convert img files paths data to CSV_**
 
