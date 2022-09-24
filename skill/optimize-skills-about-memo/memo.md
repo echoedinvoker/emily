@@ -14,6 +14,12 @@
 
 ![Alt add empty line between images ](pic/bandicam%202022-09-24%2015-05-06-378.jpg)
 
+# **_Skill: Index Metadata of memo to Elasticsearch_**
+
+## **Original Version**
+
+- https://github.com/echoedinvoker/emily/blob/master/skill/index-memo-to-elasticsearch/memo.md
+
 ![Alt new userfill ](pic/bandicam%202022-09-24%2015-11-03-120.jpg)
 
 ![Alt step condition flow ](pic/bandicam%202022-09-24%2015-13-21-416.jpg)
