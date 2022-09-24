@@ -50,3 +50,4 @@
 ![Alt moveToCrop failed situation ](pic/bandicam%202022-09-25%2006-11-29-332.jpg)
 
 - moveToCrop, clickCrop and find, waitFor return logic is completely different, moveToCrop, clickCrop when can not find the eligible image will directly throw exception, but find, waitFor return null.
+  - This affects whether the code continues to run and whether the falcy value feature can be used to make condition.
