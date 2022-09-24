@@ -24,6 +24,9 @@
 
 ![Alt add empty line between images ](pic/bandicam%202022-09-24%2015-05-06-378.jpg)
 
+- If there are more than one DA in a skill, the CROP captured by the previous DA can be used by the subsequent DA directly, so there is no need to set the CROP repeatedly.
+  - CROP in fact is also a workspace folder of the picture file, so what CROP can be used at present, you can look directly at the workspace folder.
+
 # **_Skill: Index Metadata of memo to Elasticsearch_**
 
 ## **Original Version**
