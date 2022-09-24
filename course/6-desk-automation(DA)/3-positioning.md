@@ -113,6 +113,11 @@
     - This problem is useless even if you compare the original CROP before moving, you must **find another CROP whose relative position to the target is fixed**.
   - Application location was moved.
 
+## **Conclustion**
+
+- Both approaches have their own vulnerabilities to error.
+  - The best way to do this is to be able to switch between the two methods depending on the situation and be aware that errors can occur in different situations.
+
 # **_Other Tips for Positioning_**
 
 - If the object to be DA is a web page, ~~then use CROP positioning before each operation~~.
