@@ -37,7 +37,7 @@
 - Obviously, the **find API is not constrained by confidence**, although it is constrained by the area in boundary.
   - This is a good reason to stick with **waitFor**.
 
-## **_Got a Use Case of Capture API_**
+## **_Got a good Use Case of Capture API btw_**
 
 ![Alt find out a use case of capture API ](pic/bandicam%202022-09-25%2006-21-52-570.jpg)
 
