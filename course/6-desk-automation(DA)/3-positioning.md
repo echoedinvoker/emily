@@ -96,9 +96,26 @@
 
 - The above result mainly shows that **the scope of CROP contains the mask part**.
 
+# **_Why Cursor always move to Strange Places??_**
+
+## **More Comparison, More Resilient?**
+
+- Not really, because there is a chance that a comparison error will occur in every comparison.
+  - **Cursor blocking targeted image** causes a comparison error, which is a common example.
+    - After each move to the image is complete, **getting into the habit of moving the cursor away from the image** as the next action is one way to prevent this error from happening.
+    - **Targeted image mutate** is also a common situation that can cause comparison errors.
+      - For example, fade-in and fade-out and with or without the \* symbol.
+
+## **So It's better to use more Relative Position to move?**
+
+- There are still risks associated with using this approach, and they occur at different points in the hierarchy.
+  - **Unfixed relative positions** are a common cause of errors.
+    - This problem is useless even if you compare the original CROP before moving, you must **find another CROP whose relative position to the target is fixed**.
+  - Application location was moved.
+
 # **_Other Tips for Positioning_**
 
-- If the object to be DA is a web page, then use CROP positioning before each operation.
+- If the object to be DA is a web page, ~~then use CROP positioning before each operation~~.
   - Because **web pages are very dynamic**, compared to desktop applications.
     - Even if there is only simple HTML, the length of the content in the tag will change the UI that is presented.
   - There are some features of the web page that directly break the correctness of relative coordinates.
