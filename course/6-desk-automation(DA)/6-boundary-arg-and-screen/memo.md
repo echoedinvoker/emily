@@ -27,7 +27,6 @@
 ![Alt calculate x, y ](pic/bandicam%202022-09-25%2006-02-52-881.jpg)
 
 - Depending on the relative direction of the CROP and the target, We need to decide for ourselves the positive or negative signs of x and y.
--
 
 # **_find, waitFor_**
 
