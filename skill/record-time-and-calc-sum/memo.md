@@ -9,3 +9,5 @@
 ![Alt file exporter](pic/bandicam%202022-09-28%2011-21-19-215.jpg)
 
 ![Alt file setting](pic/bandicam%202022-09-28%2011-23-25-575.jpg)
+
+- Only record.txt, which is used to record time points, will be placed in the external specified folder, and the total consumption time will be calculated and stored in result.txt, but will not be moved out of the working folder.
