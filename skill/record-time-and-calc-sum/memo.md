@@ -2,6 +2,8 @@
 
 ![Alt user fill](pic/bandicam%202022-09-28%2011-16-49-391.jpg)
 
+- If you are simply recording the current time point, do not enter any value, otherwise the total time consumption will start to be calculated.
+
 ![Alt workspace script](pic/bandicam%202022-09-28%2011-20-04-834.jpg)
 
 ![Alt file exporter](pic/bandicam%202022-09-28%2011-21-19-215.jpg)
