@@ -22,7 +22,7 @@
 # **_RPA (UiPath, AA)_**
 
 - 利用瀏覽器提供的 **plugin 或 extension**，把它的內鬼(木馬)程式植入進去，然後就可以看到瀏覽器內的內容，並往外部送出資料。
-  - plugin 無法完全做到完全的功能，必須要有一個 **local host 當作中繼站**來接收被送出的資料。
+  - plugin 無法直接達到目的，必須要有一個 **local host 當作中繼站**來接收被送出的資料。
     - 問題在於瀏覽器的 plugin 跟 local host 的搭配很容易因為 **version 的問題**而失效，造成資料無法正常傳遞。
       - 所以 UiPath 會建議使用 robot 的 machine 最好不要去動它也不要升級瀏覽器。
 
