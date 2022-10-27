@@ -4,44 +4,44 @@
 - 確認 code 中每個 crop.png 都有顯示圖形，完成
 - RPF-1.1.1
 
-## **2. 增加 apmp200, apmpt540 欄位**
+## **2. 增加 apmp200, apmpt540 欄位(done)**
 
 - 使用 Excel 打開增加欄位後存檔，記得先備份
 
-## **3. 匯入 CSV 檔案**
+## **3. 匯入 CSV 檔案(done)**
 
 - 匯入後檔案名稱 main.csv
 
-## **4. 篩選出 apmp200 欄位為空的資料另存 CSV**
+## **4. 篩選出 apmp200 欄位為空的資料另存 CSV(done)**
 
 - 使用 excel2csv(表格處理)
 - 只能存成 output.csv
 - 如果沒有任何資料，output.csv 不會產生
 
-## **5. 使用有無 output.csv 產生判斷結果**
+## **5. 使用有無 output.csv 產生判斷結果(done)**
 
 - 在 script(執行腳本)) 中使用 try catch + read 判斷
 - 結果為 boolean 寫在 apmp200.txt 中
 
-## **6. (apmp200.txt=true) 打開 apmp200 介面**
+## **6. (apmp200.txt=true) 打開 apmp200 介面(done)**
 
-## **7. (apmp200.txt=true) 循環 output.csv -> apmp200 DA**
+## **7. (apmp200.txt=true) 循環 output.csv -> apmp200 DA(done)**
 
-### _7.1 循環結束到下一個循環中間的連接_
+### _7.1 循環結束到下一個循環中間的連接(done)_
 
-### _7.2 若有彈窗需直接點擊確認，改 ENTER_
+### _7.2 若有彈窗需直接點擊確認，改 ENTER(done)_
 
-### _7.2 每次迴圈最後得到結果後都將其寫入 main.csv (缺測試)_
+### _7.2 每次迴圈最後得到結果後都將其寫入 main.csv (done)_
 
-### _7.3 考慮篩選結果沒有東西的形況_
+### _7.3 考慮篩選結果沒有東西的形況(done)_
 
 - 用什麼判斷沒有東西？
 - 判斷出沒有東西以後，要寫入失敗情況到 main.csv 此筆資料中的 apmp200 欄位
 - 結束此循環，進入下一次循環
 
-## **8. (apmp200.txt=true) 關閉 apmp200 介面**
+## **8. (apmp200.txt=true) 關閉 apmp200 介面(done)**
 
-### _8.1 考慮到不小心直接關閉 ERP 的情況_
+### _8.1 考慮到不小心直接關閉 ERP 的情況(done)_
 
 ### _8.2 刪除 output.csv_
 
