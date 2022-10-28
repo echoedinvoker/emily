@@ -21,10 +21,23 @@
   - 單身填寫時出現 warning 彈窗
     - 日期填入、tab 兩次後，侷限畫面中心檢查是否有 warning 彈窗(使用左上 tt icon)
       - 若有，Copy Field 錯誤訊息填入 main.csv、return 結束此 DA module
+      - tab 與輸入日期部分沒有滑鼠移動、點擊之類的操作，先實驗看看這些動作是否會影響到彈出 warning 視窗
+        - 如果不影響，就可以在 tab、輸入 的操作都結束以後去檢查有無彈出視窗
+          - 這樣檢查只需要一次，對整個 skill 耗時增加不大
+        - 如果有影響，就只能在每次 tab 之後做檢查
+          - 這樣檢查會比較多次，可能要縮短 waitFor 時間
 
 ### _Validation_
 
 - apmp200 與 apmt540 各自迴圈開頭應該都增加一個 validation 專用的步驟。
+- 循環中 validation 步驟通過時讓其產生一個通行證 (例如 apmp200_pass.txt = true)，讓循環中其他步驟依此條件執行
+
+### _CSV 空白資料問題_
+
+- 會造成 apmp200 篩選到所有單號
+- 應該在 main 轉 output 時把空白資料部分排除
+- 空白格字串處理
+  - trim，但如果非字串而是 null 或 undefined 怎辦
 
 ### _關於已完成資料的 CSV (外部、這次技能) 的檔案與變數名稱_
 
