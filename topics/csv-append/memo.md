@@ -2,7 +2,7 @@
 
 ![Alt original and result](pic/bandicam%202022-10-29%2023-06-05-341.jpg)
 
-- As shown above, we often need to merge the result of the processing back into the original CSV file.
+- As shown above, we often need to merge the result of the processing back into the **original CSV file**.
 
 ## **Principle**
 
