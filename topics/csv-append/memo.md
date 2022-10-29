@@ -27,9 +27,9 @@
 
 - above result has following features:
 
-  - If there is any part of the result data that is already in original, it will be overwritten.
-  - If there is any part of the result data that is not in original, it will be append into original.
-  - Keep the parts of the original that are not processed.
+  - If there is any part of the result data that is already in original, it will be **overwritten**.
+  - If there is any part of the result data that is not in original, it will be **append** into original.
+  - **Keep** the parts of the original that are not processed.
 
 - Even for a simple update of the original data, **better use the codes above instead of overriding**.
   - This will **reduce unnecessary risks**, such as users adding data to the original while the skill is still running.
