@@ -34,3 +34,10 @@
 - Even for a simple update of the original data, **better use the codes above instead of overriding**.
   - This will **reduce unnecessary risks**, such as users adding data to the original while the skill is still running.
   - However, **not all risks can be avoided**, for example, when the skill are written to outside CSV file, the user still has the original CSV file open.
+
+## **Code Update!**
+
+![alt](pic/bandicam%202022-10-31%2002-44-11-802.jpg)
+
+- Use fewer codes to complete.
+  - However, note that the **result** file must **cover all properties/fields** of the source data.
