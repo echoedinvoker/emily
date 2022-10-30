@@ -39,5 +39,5 @@
 
 ![alt](pic/bandicam%202022-10-31%2002-44-11-802.jpg)
 
-- Use fewer codes to complete.
+- Use fewer codes to complete same thing.
   - However, note that the **result** file must **cover all properties/fields** of the source data.
