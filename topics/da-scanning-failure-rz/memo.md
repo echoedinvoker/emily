@@ -10,7 +10,7 @@
 
    ![alt](pic/bandicam%202022-10-31%2011-50-35-313.jpg)
 
-2. Use **Ctrl+0** to snapshot screen.
+2. Always use **Ctrl+0** to snapshot screen.
 3. If possible, use **hotkeys** whenever possible.
 
 ## **Common CROP Scanning error: moving target(animate)**
@@ -38,3 +38,4 @@
 1. **Keep only the last CROP** and make a difference by **limiting the search scope**.
    - In this way, theoretically there can be no misjudgment, but the **window cannot be moved arbitrarily**.
    - Usually to limit the scope of search is for **pop-ups**, so this method can generate **falcy value** to do the judgment of **whether there are pop-ups or not**.
+   - Reduces the amount of CROP used BTW.
