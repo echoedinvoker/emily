@@ -5,6 +5,7 @@
 ![Alt low-code](pic/bandicam%202022-10-30%2016-15-25-119.jpg)
 
 - Because Emily's low-code cannot interact with external files, there is no way to check if there are external folders or files.
+  - There is already a good way to check if files/folders exist, please check the topic **'upload-files-check'**.
 - So the above low-code only checks if all attributes are filled in values.
 - Because it's not in the Loop, we can actively throw an Error to stop the entire Skill.
 
