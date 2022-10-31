@@ -32,6 +32,7 @@
 ![Alt throw error](pic/bandicam%202022-10-31%2015-06-54-787.jpg)
 
 - Must use **'includes'**, using '===' can not be correctly determined.
+- Note that the contents of the Powershell output text files are **strings of words with uppercase prefixes**.
 
 ### _write into CSV in loop_
 
