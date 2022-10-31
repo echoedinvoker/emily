@@ -7,6 +7,7 @@
 - As usual.
 - Be careful **not** to end the last data in json with a **comma**.
   - stuck by this fault for a long time...
+- The path to test in settings does not have anything, this is for the test.
 
 ## **#2 Create .txt for each property**
 
