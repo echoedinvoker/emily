@@ -62,20 +62,8 @@ const symbolQ = await api.screen.waitFor(
   { confidence: 0.97 }
 );
 await api.sleep(200);
-console.log(symbolQ);
 if (symbolQ) {
-  const yesBtn = await api.screen.waitFor(
-    'crop-d90e870e61a682abc561a3907a5ccbe203c421f157f786d23fdf84f2793fca1a.png',
-    5000,
-    { confidence: 0.97 }
-  );
-  console.log(yesBtn);
-  await api.mouse.move(
-    yesBtn.left + yesBtn.width / 2,
-    yesBtn.top + yesBtn.height / 2
-  );
-  await api.sleep(200);
-  await api.mouse.clickLeft();
+  await api.keyboard.enter();
   await api.sleep(200);
 }
 
@@ -201,7 +189,7 @@ await api.mouse.clickLeft(); // afiter clicking, render buttons one by one
 await api.sleep(100);
 await api.sleep(100);
 
-//                                                                                                                  maybe add a sleep?
+await api.sleep(2000); // wait rendering buttons
 
 // 相關文件
 currentCrop = await api.screen.waitFor(
@@ -219,13 +207,11 @@ await api.mouse.clickLeft(); // Render next crop's target, but before it there i
 await api.sleep(100);
 await api.sleep(100);
 
-await api.sleep(3000); // Wait UI expand (maybe change to limit scanning scope)
-
 // 新增
 currentCrop = await api.screen.waitFor(
   'crop-2e978814f4e1a4bd224b5e8dd0af827bf075aa3892b9c64613eded935e4b13b2.png',
   5000,
-  { confidence: 0.97 }
+  { confidence: 0.97 } //                                                                                                need add region limited here
 );
 await api.mouse.move(
   currentCrop.left + currentCrop.width / 2,
@@ -234,8 +220,6 @@ await api.mouse.move(
 await api.sleep(200);
 await api.mouse.clickLeft(); // Refresh next crop's target, but just appear at fixed place
 await api.sleep(200);
-
-await api.sleep(3000); // maybe remove it?
 
 // 文件位置
 currentCrop = await api.screen.waitFor(
@@ -251,8 +235,6 @@ await api.sleep(200);
 await api.mouse.clickLeft(); // Refresh next crop's target, but there is a another copy before it
 await api.sleep(200);
 
-await api.sleep(2000); // wait prompt window 2022.11.3 (maybe replace this with limited scope)
-
 // 輸入檔案位置
 // await api.pasteText(`C:\\Users\\publie1\\Desktop\\EMILY\\${api.read('row-請購單號.txt')}.pdf`);
 await api.pasteText(`${api.read('hasPDF.txt')}`);
@@ -261,7 +243,7 @@ await api.pasteText(`${api.read('hasPDF.txt')}`);
 currentCrop = await api.screen.waitFor(
   'crop-348c72e54eba359df8ed32e99aa94c0579d27a0a2d26952335816f58d2eb39d9.png',
   5000,
-  { confidence: 0.97 }
+  { confidence: 0.97 } //                                                                                               need add region limited here
 );
 await api.mouse.move(
   currentCrop.left + currentCrop.width / 2,
@@ -307,27 +289,15 @@ await api.sleep(200);
 await api.mouse.clickLeft(); // Refresh next crop's target, but there is a copy before it.
 await api.sleep(200);
 
-await api.sleep(3000); // Maybe change to use limited scope?
-
 // 確定
-currentCrop = await api.screen.waitFor(
-  'crop-348c72e54eba359df8ed32e99aa94c0579d27a0a2d26952335816f58d2eb39d9.png',
-  5000,
-  { confidence: 0.97 }
-);
-await api.mouse.move(
-  currentCrop.left + currentCrop.width / 2,
-  currentCrop.top + currentCrop.height / 2
-);
-await api.sleep(200);
-await api.mouse.clickLeft();
+await api.keyboard.enter();
 await api.sleep(200);
 
 // ESC 離開文件相關UI
 await api.keyboard.escape(); // Refresh next crop's target, render buttons one by one
 await api.sleep(200);
 
-//                                                                                                      Maybe add a sleep?
+await api.sleep(2000); // Wait rendering buttons
 
 // 發包價
 currentCrop = await api.screen.waitFor(
@@ -357,12 +327,10 @@ await api.sleep(200);
 await api.mouse.clickLeft();
 await api.sleep(200);
 
-await api.sleep(2000); // Waiting prompt window (maybe can pass?)
-
 await api.keyboard.enter(); // after click only render three button, but...
 await api.sleep(200);
 
-//                                                                                                                  add sleep to wait render buttons
+await api.sleep(1000); // still wait for rendering buttons
 
 // 確定(右上)
 currentCrop = await api.screen.waitFor(
@@ -375,7 +343,7 @@ await api.mouse.move(
   currentCrop.top + currentCrop.height / 2
 );
 await api.sleep(200);
-await api.mouse.clickLeft(); // Refresh buttons, render one by one
+await api.mouse.clickLeft();
 await api.sleep(200);
 
 await api.sleep(2000); // Wait buttons rendering

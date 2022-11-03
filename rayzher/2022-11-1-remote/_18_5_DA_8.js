@@ -52,7 +52,7 @@ await api.sleep(200);
 await api.mouse.clickLeft();
 await api.sleep(200);
 
-await api.sleep(1000);
+await api.sleep(1000); // for drop down list animation
 
 // 已確認
 currentCrop = await api.screen.waitFor(
@@ -79,7 +79,7 @@ await api.sleep(200);
 await api.mouse.clickLeft();
 await api.sleep(200);
 
-//                                                                                                            drop down list animation, but no sleep
+await api.sleep(1000); // for drop down list animation
 
 // 已核准
 currentCrop = await api.screen.waitFor(
@@ -198,10 +198,8 @@ await api.mouse.move(
   currentCrop.top + currentCrop.height / 2
 );
 await api.sleep(200);
-await api.mouse.clickLeft(); // Refresh next crop's target but not any anmination and repeat
+await api.mouse.clickLeft(); // Refresh next crop's target but no any animations
 await api.sleep(200);
-
-await api.sleep(2000); // Waiting UI expand (pass this??)
 
 // Click Center of Warning UI
 currentCrop = await api.screen.waitFor(
@@ -238,17 +236,8 @@ const newMain = main.map((cur) => {
   return cur;
 });
 api.write('main.json', JSON.stringify(newMain));
+await api.sleep(200);
 
 // 確定
-currentCrop = await api.screen.waitFor(
-  'crop-348c72e54eba359df8ed32e99aa94c0579d27a0a2d26952335816f58d2eb39d9.png',
-  5000,
-  { confidence: 0.97 }
-);
-await api.mouse.move(
-  currentCrop.left + currentCrop.width / 2,
-  currentCrop.top + currentCrop.height / 2
-);
-await api.sleep(200);
-await api.mouse.clickLeft();
+await api.keyboard.enter();
 await api.sleep(100);

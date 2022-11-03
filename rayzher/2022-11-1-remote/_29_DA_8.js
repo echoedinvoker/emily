@@ -18,6 +18,3 @@ await api.pasteText('apmt540');
 await api.sleep(200);
 await api.keyboard.enter();
 await api.sleep(200);
-
-// wait apmt540 UI open
-await api.sleep(2000); // after this is validation, maybe can pass this sleep?

@@ -19,8 +19,6 @@ await api.sleep(200);
 await api.keyboard.enter(); // Refreash next crop's target; check no any similar target before refreshing
 await api.sleep(200);
 
-await api.sleep(2000); // wait apmp200 UI open, but is it neccessary??
-
 // 放棄
 currentCrop = await api.screen.waitFor(
   'crop-b7291af325cb6d5a8fc894dbe717dd552bb5c9219063a6bdb9510f9eb8685acd.png',
