@@ -246,7 +246,7 @@
 //   currentCrop.top + currentCrop.height / 2
 // );
 // await api.sleep(200);
-// await api.mouse.clickLeft();
+// await api.mouse.clickLeft(); // refresh
 // await api.sleep(200);
 
 // // 輸入檔案位置
