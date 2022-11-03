@@ -6,3 +6,7 @@ fs.writeFileSync(
     'inputFileName.txt'
   )}`
 );
+// write(
+//   'inputPath.txt',
+//   `${read('inputFolder.txt')}\\${read('inputFileName.txt')}`
+// );

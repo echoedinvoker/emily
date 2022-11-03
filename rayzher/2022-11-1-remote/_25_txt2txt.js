@@ -1,9 +1,10 @@
 // const main = JSON.parse(api.read('main.json'));
-// const filteredMain = main.filter((cur) => !cur.apmp200);
+
+// const filteredMain = main.filter((cur) => cur.apmp200?.startsWith('RP22-'));
 
 // if (filteredMain.length) {
-//   api.write('apmp200Go.txt', 'True');
-//   await api.writeCSV('apmp200Loop.csv', filteredMain, [
+//   api.write('apmt540Go.txt', 'True');
+//   await api.writeCSV('apmt540Loop.csv', filteredMain, [
 //     '專案號碼',
 //     '請購日期',
 //     '請購單號',
