@@ -1,4 +1,4 @@
-// let finish;
+let finish;
 // try {
 //   finish = JSON.parse(read('finish.json'));
 // } catch (err) {

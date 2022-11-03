@@ -1,6 +1,6 @@
-// const finishName = `finish_${moment(new Date()).format('YYMMDD')}.csv`;
+const finishName = `finish_${moment(new Date()).format('YYMMDD')}.csv`;
 
-// output.push({
-//   src: finishName,
-//   dst: finishName,
-// });
+output.push({
+  src: finishName,
+  dst: finishName,
+});
