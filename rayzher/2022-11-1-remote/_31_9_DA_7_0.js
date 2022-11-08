@@ -251,7 +251,7 @@ await api.sleep(200);
 await api.mouse.clickLeft(); // Refresh next crop's target, but there is a another copy before it
 await api.sleep(200);
 
-await api.sleep(2000); // wait prompt window 2022.11.3 (maybe replace this with limited scope)
+// await api.sleep(2000); // wait prompt window 2022.11.3 (maybe replace this with limited scope)
 
 // 輸入檔案位置
 // await api.pasteText(`C:\\Users\\publie1\\Desktop\\EMILY\\${api.read('row-請購單號.txt')}.pdf`);
